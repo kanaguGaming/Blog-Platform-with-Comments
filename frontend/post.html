@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Post - BlogSpace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BLOGSPACE</a>
+        <nav id="navbar"></nav>
+    </header>
+
+    <div class="container" style="max-width: 800px;">
+        <div class="card" id="postContainer">
+            <!-- Post content loaded dynamically -->
+        </div>
+
+        <div class="card">
+            <h3>Comments</h3>
+            <div id="commentFormContainer">
+                <!-- Comment form loaded dynamically if authenticated -->
+            </div>
+            <div id="commentsContainer" style="margin-top: 1rem;">
+                <!-- Comments loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/comments.js"></script>
+    <script src="js/post.js"></script>
+</body>
+</html>

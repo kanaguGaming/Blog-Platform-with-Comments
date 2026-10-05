@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post - BlogSpace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BLOGSPACE</a>
+        <nav id="navbar"></nav>
+    </header>
+
+    <div class="container" style="max-width: 800px;">
+        <div class="card">
+            <h2>Create New Post</h2>
+            <form id="createPostForm">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" id="title" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select id="category" class="form-control" required>
+                        <option value="Technology">Technology</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Education">Education</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Gaming">Gaming</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Content</label>
+                    <textarea id="content" class="form-control" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn">Publish Post</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/post.js"></script>
+</body>
+</html>

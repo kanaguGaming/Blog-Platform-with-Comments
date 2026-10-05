@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - BlogSpace</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">BLOGSPACE</a>
+        <nav id="navbar"></nav>
+    </header>
+
+    <div class="container">
+        <div class="card" style="text-align: center;">
+            <h2 id="profileName">Loading...</h2>
+            <p id="profileEmail"></p>
+            <p>Member since: <span id="profileDate"></span></p>
+        </div>
+
+        <h2>My Posts</h2>
+        <div id="myPostsContainer" class="post-grid">
+            <!-- User posts loaded here -->
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</html>
